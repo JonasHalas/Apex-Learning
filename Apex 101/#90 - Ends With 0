@@ -1,0 +1,11 @@
+// #90 - Ends With 0
+// https://www.apexsandbox.io/problem/90
+
+public Boolean isEndWithZero(Integer num){
+    
+    if (Math.mod(num, 10) == 0) {
+        return true;
+    }
+    return false;
+
+}

@@ -1,0 +1,26 @@
+// #15 - Which Two
+// https://www.apexsandbox.io/problem/15
+
+public String whichTwo(Integer a, Integer b, Integer c) {
+    
+    if (a + b == c) {
+        return 'c';
+    } if (a + c == b) {
+        return 'b';
+    } if (b + c == a) {
+        return 'a';
+    } else {
+        return '';
+    }
+}
+
+
+// Shorten version
+
+public String whichTwo(Integer a, Integer b, Integer c) {
+    
+    if (a + b == c) return 'c';
+    if (a + c == b) return 'b';
+    if (b + c == a) return 'a';
+    return '';
+}

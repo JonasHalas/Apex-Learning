@@ -1,0 +1,13 @@
+// #54 - Companion Plants
+// https://www.apexsandbox.io/problem/54
+
+public Boolean companionPlants(String plant1, String plant2) {
+    
+    if(plant1 == 'lettuce' && plant2 == 'cucumbers' || plant2 == 'lettuce' && plant1 == 'cucumbers') return true;
+    if(plant1 == 'lettuce' && plant2 == 'onions' || plant2 == 'lettuce' && plant1 == 'onions') return true;
+    if(plant1 == 'onions' && plant2 == 'carrots' || plant2 == 'onions' && plant1 == 'carrots') return true;
+    if(plant1 == 'onions' && plant2 == 'tomatoes' || plant2 == 'onions' && plant1 == 'tomatoes') return true;
+    
+    return false;
+
+}

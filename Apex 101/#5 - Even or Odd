@@ -1,0 +1,10 @@
+// #5 - Even or Odd
+// https://www.apexsandbox.io/problem/5
+
+public String evenOrOdd(Integer num) {
+    
+    if (Math.mod(num, 2) == 0) {
+        return 'even';
+    } 
+    return 'odd';
+}

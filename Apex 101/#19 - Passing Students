@@ -1,0 +1,44 @@
+// #19 - Passing Students
+// https://www.apexsandbox.io/problem/19
+
+
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    
+    if (passedExam == true && (passedAssignments == true && passedProject == false)) {
+        return true;
+    } else if (passedExam == true && (passedAssignments == false && passedProject == true)) {
+        return true;
+    } else if (passedExam == false && (passedAssignments == true && passedProject == true)) {
+        return true;
+    } else if (passedExam == true && (passedAssignments == true && passedProject == true)) {
+       return true; 
+    } else {
+        return false;
+    }
+}
+
+
+// Attempt #2 to shorten the code
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    
+    if (passedExam == true && (passedAssignments == true && passedProject == false)) return true;
+    if (passedExam == true && (passedAssignments == false && passedProject == true)) return true;
+    if (passedExam == false && (passedAssignments == true && passedProject == true)) return true;
+    if (passedExam == true && (passedAssignments == true && passedProject == true)) return true;
+
+    return false;
+
+}
+
+
+// Attempt #3 to shorten the code
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    
+    Integer passedCount = 0;
+
+    if(passedExam) passedCount++;
+    if(passedAssignments) passedCount++;
+    if(passedProject) passedCount++;
+
+    return passedCount >= 2;
+}

@@ -1,0 +1,11 @@
+// #14 - Sum Equals
+// https://www.apexsandbox.io/problem/14
+
+public Boolean sumEquals(Integer a, Integer b, Integer c) {
+
+    if (a + b == c) {
+        return true;
+    } else {
+        return false;
+    }
+}
