@@ -1,0 +1,12 @@
+// #16 - Sum 1 to N
+// https://www.apexsandbox.io/problem/16
+
+public Integer sumToN(Integer n) {
+    
+    Integer sum = 0;
+
+    for (Integer i = 1; i <= n; i++) {
+        sum = i + sum;
+    }
+    return sum;
+}
