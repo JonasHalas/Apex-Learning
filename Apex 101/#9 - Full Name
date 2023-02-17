@@ -1,0 +1,7 @@
+// #9 - Full Name
+// https://www.apexsandbox.io/problem/9
+
+public String formatName(String firstName, String lastName) {
+  
+    return firstname + ' ' + lastName;
+}
